@@ -25,7 +25,6 @@ body {
   width: min(940px, 94%);
   padding: 28px;
 }
-
 .card {
   display: grid;
   grid-template-columns: 220px 1fr;
@@ -37,12 +36,13 @@ body {
   z-index: 0;
   overflow: hidden;
 }
+
 .card::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: 16px;
-  padding: 5px;
+  padding: 3px;
   background: linear-gradient(
     90deg,
     #7c3aed,
