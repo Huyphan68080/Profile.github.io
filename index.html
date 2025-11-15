@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Card — Huy</title>
+  <link rel="stylesheet" href="styels.css">
+  <style>
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" id="profileCard">
+      <div>
+        <div class="avatar" id="avatarWrap">
+          <canvas class="pulse" id="pulseCanvas"></canvas>
+          <img id="avatarImg" src="https://files.catbox.moe/8gcln7.jpg" alt="Avatar">
+          <div class="checkmark">
+            <img src="https://files.catbox.moe/335p14.png" alt="Verified">
+          </div>
+        </div>
+        <div style="margin-top:12px">
+          <div class="info">
+            <h1 id="nameText">Huy</h1>
+            <p class="role" id="roleText">Lập trình viên / Front-end</p>
+            <p class="bio" id="bioText">Xin chào — mình là Huy, thích xây dựng giao diện đẹp và tối ưu trải nghiệm người dùng.</p>
+            <div class="skills" id="skillsWrap">
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="section">
+          <h3>Kỹ năng</h3>
+          <div style="display:flex; flex-direction:column; gap:10px">
+            <div>
+              <div style="display:flex; justify-content:space-between"><strong>HTML</strong><span>85%</span></div>
+              <div class="progress"><i id="htmlBar"></i></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between"><strong>CSS</strong><span>90%</span></div>
+              <div class="progress"><i id="cssBar"></i></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between"><strong>JavaScript</strong><span>30%</span></div>
+              <div class="progress"><i id="jsBar"></i></div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between"><strong>React</strong><span>30%</span></div>
+              <div class="progress"><i id="reactBar"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h3>Liên hệ</h3>
+          <div class="contacts">
+            <a href="https://github.com/Huyphan68080" target="_blank">🐙 GitHub</a>
+            <a href="https://www.facebook.com/hphan.media.vn?mibextid=ZbWKwL" target="_blank">🔗 Facebook</a>
+          </div>
+        </div>
+        <div class="meta">
+          <button id="downloadBtn">Tải JSON</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
